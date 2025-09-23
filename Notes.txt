@@ -1,0 +1,136 @@
+React Basics
+
+1. What is React?
+    - React is a JavaScript library for building user interfaces.
+    - It is maintained by Facebook and a community of developers.
+
+2. Key Features:
+    - Component-Based Architecture
+    - Virtual DOM
+    - Declarative UI
+    - Unidirectional Data Flow
+
+    _____OneShot_____;
+
+    Working with DOM 
+
+1. Browser takes HTML and create DOM.
+2. JS helps us modify DOM based on user actions or events.
+3. In big applications, Working with DOM becomes ,compticates
+
+    Problems with JavaScript
+
+1. React has a simpler mental model
+2. JS is cumbersome
+3. JS is Error-prone
+4. JS is Hard to maintain
+
+Working of React
+
+
+No need to worry about querying and updating DOM elements.
+React creates a web page with small and reusable components
+React will take care of creating and updating DOM elements.
+IT saves a lot of time, cheezein aasan hai, pahele se likhi hui hain
+
+JS VS REACT 
+
+1. JS is imperative: You define steps to reach your desired state.
+2. React is Declarative: You define the target Ul state and then react figures out how to reach that state.
+
+____Components_____
+
+React application is a tree of components with App Component as the root bringing everything together.
+7. What is IDE
+1. IDE stands for Integrated Development Environment.
+2. Software suite that consolidates basic tools required for software development.
+3. Central hub for coding, finding problems, and testing.
+4. Designed to improve developer efficiency.
+
+Need of IDE
+1. Streamlines development.
+2. Increases productivity.
+3. Simplifies complex tasks.
+4. Offers a unified workspace.
+
+5. IDE Features
+1. Code Autocomplete
+2. Syntax Highlighting
+3. Version Control
+4. Error Checking
+
+
+
+Create React App
+
+Official tool is CRA(Create React APP)
+Vite is a modern tool to create React Project.
+Vite produces Quick and Small bundle size.
+Vite: Use npm run dev to launch dev server.
+Use npm start for CRA.
+
+9. Project Structure
+1. node_modules/ has all the installed node packages
+2. public/ Directory: Contains static files that don't change.
+3. src/ Directory: Main folder for the React code.
+1. components/: Reusable parts of the Ul, like buttons or headers.
+2. assets/: Images, fonts, and other static files.
+3. styles/: CSS or stylesheets.
+4. package.json contains information about this project like name, version, dependencies on other react packages.
+5. vite.config.js contains vite config.
+
+
+Creating React Components
+10. File Extensions
+11. Class us Function Components
+12. What is JSX?
+13. Exporting component D
+14. Other important Points
+15. Dynamic Components
+16. Reusable Components
+
+
+10. File Extensions
+.JS
+Stands for JavaScript
+Contains regular JavaScript code
+Used for general logic and components
+.JSX
+Stands for JavaScript XML
+Combines JavaScript with HTML-like tags
+Makes it easier to design UI components
+
+
+
+11. Class vs Function Components
+Class Components
+• Stateful: Can manage state.
+• Lifecycle: Access to lifecycle methods.
+• Verbose: More boilerplate code.
+• Not Preferred anymore.
+Functional Components
+ED
+• Initially stateless.
+• Can use Hooks for state and effects.
+Simpler and more concise.
+• More Popular.
+
+
+12. What is JSX?
+1. Definition: JSX determines how the UI will look wherever the component is used.
+2. Not HTML: Though it resembles HTML, you're actually writing JSX, which stands for JavaScript XML.
+3. Conversion: JSX gets converted to regular JavaScript.
+4. Babeljs.io/repl is a tool that allows you to see how JSX is transformed into JavaScript.
+
+
+Exporting components
+1. Enables the use of a component in other parts.
+2. Default Export: Allows exporting a single component as the default from a module.
+3. Named Export: Allows exporting multiple items from a module.
+4. Importing: To use an exported component, you need to import it in the destination file using import syntax.
+
+
+Dynamic Content: 
+JSX allows the creation of dynamic and interactive Ul components.
+2. JavaScript Expressions: Using {}, we can embed any JS expression directly within JSX. This includes variables, function calls, and more.
+
