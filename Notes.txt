@@ -142,4 +142,14 @@ Ul consistency and reduces the chance of discrepancies.
 3. Efficiency: Reduces development time and effort by avoiding duplication of code.
 4. Maintainability: Changes made to a reused component reflect everywhere it's used, simplifying updates and bug fixes.
 
-
+17. Including Bootstrap
+Responsive: Mobile-first design for all device sizes.
+Components: Pre-styled elements like buttons and navbars.
+Customizable: Modify default styles as needed.
+Cross-Browser: Consistent look across browsers.
+Open-Source: Free with community support. 
+1. Install:
+npm
+i bootstrap@5.3.2
+2. import
+import "bootstrap/dist/css/bootstrap.min.css";
