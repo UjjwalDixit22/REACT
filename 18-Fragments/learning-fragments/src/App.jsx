@@ -3,6 +3,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import FoodItems from "./Components/FoodItems";
 import Errormsg from "./Components/Errormsg";
+import Container from "./Components/Container";
 
 
 function App() {
@@ -16,10 +17,15 @@ function App() {
 
   return (
     <>
+    <Container>
       <h1 className="foodHeading">Healthy Foods</h1>
       {/* {emptyMessage} */}
       <Errormsg items={foodITems} />
       <FoodItems items={foodITems} />
+    </Container>
+    <Container>
+      <p>Above mentioned Foods are good for physical and mental well being.</p> 
+    </Container>
     </>
   );
 }

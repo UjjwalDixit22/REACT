@@ -1,5 +1,5 @@
 .ug-item{
-    background-color: purple;
+    background-color: red;
     color: aliceblue;
     
     
@@ -8,6 +8,7 @@
     font-weight: 900;
 }
 .foodHeading{
-    background-color: silver;
+    /* background-color: ; */
     color: brown;
+    text-align: center;
 }

@@ -215,3 +215,11 @@ CSS module
 4. Automatically generates unique class names.
 5. Promotes modular and maintainable CSS.
 6. Can use alongside global CSS when needed.
+
+Passing Children 
+1. children is a special prop for passing elements into components.
+Used for flexible and reusable component designs.
+3. Common in layout or container components.
+4. Accessed with props. children.
+Can be any content: strings, numbers, JSX, or components.
+6. Enhances component composability and reusability.
