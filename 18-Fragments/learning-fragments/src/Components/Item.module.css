@@ -7,3 +7,8 @@
 .ug-span{
     font-weight: 900;
 }
+.buttons{
+    /* you have align to right in your parent */
+    float: right; 
+    
+}

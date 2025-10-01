@@ -4,11 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import FoodItems from "./Components/FoodItems";
 import Errormsg from "./Components/Errormsg";
 import Container from "./Components/Container";
+import FoodInput from "./Components/FoodInput.";
 
 
 function App() {
   // let foodITems =[];
-  let foodITems = ["Blueberries", "Avacadoes", "Nuts", "Pineapple"];
+  let foodITems = ["Blueberries", "Avacadoes", "Nuts", "Pineapple","Banana","Milk"];
 
   // if(foodITems.length===0){
   //   return <p>Still Hungry!</p>
@@ -20,12 +21,11 @@ function App() {
     <Container>
       <h1 className="foodHeading">Healthy Foods</h1>
       {/* {emptyMessage} */}
+      <FoodInput/>
       <Errormsg items={foodITems} />
       <FoodItems items={foodITems} />
     </Container>
-    <Container>
-      <p>Above mentioned Foods are good for physical and mental well being.</p> 
-    </Container>
+
     </>
   );
 }
