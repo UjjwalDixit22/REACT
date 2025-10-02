@@ -1,8 +1,5 @@
 import styles from "./FoodInput.module.css";
-const FoodInput = () => {
-    const handleOnchange=(e)=>{
-        console.log(e.target.value);
-    }
+const FoodInput = ({handleOnchange}) => {
   return (
     <input
       type="text"
