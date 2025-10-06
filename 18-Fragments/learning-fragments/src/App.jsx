@@ -8,7 +8,7 @@ import { useState } from "react";
 
 function App() {
   // let foodITems =[];
-  let foodITems = ["Blueberries", "Avacadoes", "Nuts", "Pineapple","Banana","Milk"];
+  // let foodITems = ["Blueberries", "Avacadoes", "Nuts", "Pineapple","Banana","Milk"];
 
   // if(foodITems.length===0){
   //   return <p>Still Hungry!</p>
@@ -20,30 +20,44 @@ function App() {
 
   // Do this
 
-  let [textToShow, setTextStateFun] =  useState("Food Item entered by the user.");
-  console.log(`Current value of textState:${textToShow}`);
-  
+  // let [textToShow, setTextStateFun] = useState();
+
+  let [foodItems,setFoodItems] = useState([
+    "Blueberries",
+    "Avacadoes",
+    "Nuts",
+  ]);
+
+  // console.log(`Current value of textState:${textToShow}`);
 
   // It returns array of current vale and changing function
 
-
-  // let textToShow = "Food Item entered by the user." 
-  const handleOnchange=(e)=>{
-        // console.log(e.target.value);
-        setTextStateFun(e.target.value);
+  // let textToShow = "Food Item entered by the user."
+  // const handleOnchange = (e) => {
+  const onKeyDown = (e) => {
+    if(event.key === "Enter"){
+      let newFoodItem = e.target.value;
+      let newFoodItems = [...foodItems,newFoodItem]; // Copying the old array
+      setFoodItems(newFoodItems);
+      console.log(newFoodItem);
+      
     }
+    // console.log(e.target.value);
+    // setTextStateFun(e.target.value);
+  };
 
   return (
     <>
-    <Container>
-      <h1 className="foodHeading">Healthy Foods</h1>
-      {/* {emptyMessage} */}
-      <FoodInput handleOnchange={handleOnchange}/> 
-      <p><i>{textToShow}</i></p>
-      <Errormsg items={foodITems} />
-      <FoodItems items={foodITems} />
-    </Container>
-
+      <Container>
+        <h1 className="foodHeading">Healthy Foods</h1>
+        {/* {emptyMessage} */}
+        {/* <FoodInput handleOnchange={handleOnchange} />
+         */}
+        <Errormsg items={foodItems} />
+        <FoodInput handleOnKeyDown={onKeyDown} />
+        {/* <p><i>{textToShow}</i></p> */}
+        <FoodItems items={foodItems} />
+      </Container>
     </>
   );
 }
