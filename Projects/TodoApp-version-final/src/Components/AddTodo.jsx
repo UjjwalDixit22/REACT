@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaAddressCard } from "react-icons/fa";
 function AddTodo({onNewItem}) {
   const [todoName,setTodoName] = useState();
   const [dueDate,setDueDate] = useState();
@@ -29,7 +30,7 @@ function AddTodo({onNewItem}) {
         <div className="col-2">
           <button type="button" className="btn btn-success kg-button"
           onClick={handleAddButtonClicked}>
-            Add
+            <FaAddressCard />
           </button>
         </div>
       </div>
