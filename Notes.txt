@@ -283,3 +283,39 @@ Inspecting React DEv tools
 4. Navigation: Conveniently navigate through the entire component tree.
 5. Filtering: Filter components by name or source to locate them quickly.
 6. Real-time Feedback: See live changes as you modify state or props.
+
+
+React works ??
+React and ReactDOM(Virtual DOM):
+• The actual updating of the browser's DOM isn't done by React itself.
+• It's handled by a companion library called react-dom.
+Root Element:
+• The root div acts as a container for the React app.
+• The script tag is where the React app starts executing.
+• If you check main.tsx, the component tree is rendered inside this root element.
+Strict Mode Component:
+• It's a special component in React.
+• Doesn't have a visual representation.
+• Its purpose is to spot potential issues in your React app.
+Platform Independence:
+• React's design allows it to be platform-agnostic.
+• While react-dom helps build web Uls using React, ReactNative can be used to craft mobile app Uls.
+
+
+31. React Vs Angular vs Vue
+React, Angular, and Vue:
+• React is a library, while Angular and Vue.js are frameworks.
+• React focuses on Ul; Angular and Vue.js offer comprehensive tools for full app development.
+Library vs. Framework:
+• A library offers specific functionality.
+• A framework provides a set of tools and guidelines.
+• In simpler terms: React is a tool; Angular and Vue.js are toolsets.
+React's Specialty:
+• React's main role is crafting dynamic, interactive Uls.
+• It doesn't handle routing, HTTP calls, state management, and more.
+React's Flexibility:
+• React doesn't dictate tool choices for other app aspects.
+• Developers pick what fits their project best.
+About Angular and Vue.js:
+• Angular, developed by Google, provides a robust framework with a steep learning curve.
+• Vue.js is known for its simplicity and ease of integration, making it beginner-friendly.
