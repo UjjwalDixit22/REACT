@@ -28,7 +28,7 @@ function AddTodo({onNewItem}) {
     
     onNewItem(todoName,dueDate);
     // setTodoName("");
-    // setDueDate("");
+    // setDueDate("");./
   }
  
 
